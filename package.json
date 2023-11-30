@@ -1,0 +1,25 @@
+{
+  "name": "flower-website",
+  "version": "1.0.0",
+  "homepage": "https://bloodypats.github.io/Quitain_Villanueva-flowershop.git",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "nodemon server.js",
+    "build" :"react-scripts build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@stripe/ui-extension-sdk": "^8.8.1",
+    "dotenv": "^16.3.1",
+    "express.js": "^1.0.0",
+    "gh-pages": "^6.1.0",
+    "nodemon": "^3.0.1",
+    "stripe": "^14.5.0"
+  }
+}

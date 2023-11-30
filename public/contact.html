@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name = "viewport" content="width=device-width, initial-scale=1"/>
+    <title>Online Flowers Shop</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Jomolhari&family=Leckerli+One&family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo+Black&family=Jomolhari&family=Leckerli+One&family=Montserrat:wght@300;400;500;600;700;800;900&family=Rowdies:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+  </head>
+  <body>
+
+  <header>
+    <a href="#"class="logo">
+      <h2>Bloomz</h2>
+    </a>
+
+    <ul class="navbar">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="shop.html">Shop</a></li>
+      <li><a href="review.html">Reviews</a></li>
+    </ul>
+
+    <div class="h-icons">
+      <a href="#"><i class='bx bx-shopping-bag' id="cart-icon"></i></a>
+      <span id="cart-count">0</span>
+      <!--cart-->
+      <div class="cart">
+        <h2 class="cart-title">Your Cart</h2>
+        <div class="cart-content">
+      
+        </div>
+        <!--total-->
+        <div class="total">
+          <div class="total-title">Total</div>
+          <div class="total-price">₱0</div>
+        </div>
+        <!--buy-button-->
+        <button type="button" class="btn-buy">Buy Now</button>
+        <!--cart-close-->
+        <i class='bx bx-x' id="close-cart"></i>
+      </div>
+      <a class="active" href="contact.html"><i class='bx bx-phone'></i></a>
+      <a href="#"><i class='bx bx-user' onclick="menuToggle();"></i></a>
+      <div class="user-name">
+        <h3>User Name <br><span>user@gmail.com</span></h3>
+        <i class='bx bx-x' id="close-user" onclick="closeMenu();"></i>
+        <ul>
+          <li><img src="user-a.png"><strong>My Profile</strong></li>
+          <li><img src="edit-user.png"><strong>Edit Profile</strong></li>
+          <li><img src="settings.png"><strong>Settings & Privacy</strong></li>
+          <li><img src="help.png"><strong>Help & Support</strong></li>
+          <li><br><img src="log.png"><strong>Logout </strong></li>
+        </ul>
+
+      </div>
+
+
+      <div class="bx bx-menu" id = "menu-icon"></div>
+      </div>
+
+<button class="button" id="form-open">Login</button>
+  </header>
+
+<section class="contact-header">
+  <div class="home-text">
+    <br>
+    <br>
+    <h1>Contact Us<br>#let's_talk</h1>
+  </div>
+</section>
+
+   <!--log in-->
+   <div class="form_container">
+     <i class='bx bx-x form_close'></i>
+
+     <!--log in form-->
+
+     <div class="form login_form">
+       <form action="#">
+         <h2>Login</h2>
+
+         <div class="input_box">
+          <input type="email"placeholder="Enter your email" required/>
+          <i class="uil uil-envelope email"></i>
+         </div>
+
+         <div class="input_box">
+          <input type="password"placeholder="Enter your password" required/>
+          <i class='bx bx-lock-alt password' ></i>
+          <i class="uil uil-eye-slash pw_hide"></i>
+         </div>
+
+  <div class="option_field">
+  <span class="checkbox">
+  <input type="checkbox" id="check">
+  <label for="check">Remember me</label>
+  </span>
+  <a href="#" class"forgot_pw">Forgot password?</a>
+  </div>
+
+<button class="button">Login Now</button>
+
+<div class="login_signup">
+  Don't have an account? <a href="#" id="signup">Signup</a>
+</div>
+       </form>
+     </div>
+
+<!--Sign Up form-->
+
+<div class="form signup_form">
+  <form action="#">
+    <h2>Signup</h2>
+
+    <div class="input_box">
+     <input type="email"placeholder="Enter your email" required/>
+     <i class="uil uil-envelope email"></i>
+    </div>
+
+    <div class="input_box">
+     <input type="password"placeholder="Create password" required/>
+     <i class="uil uil-lock password"></i>
+        <i class="uil uil-eye-slash pw_hide"></i>
+    </div>
+
+    <div class="input_box">
+     <input type="password"placeholder="Confirm password" required/>
+      <i class="uil uil-lock password"></i>
+    <i class="uil uil-eye-slash pw_hide"></i>
+    </div>
+
+<button class="button">Signup Now</button>
+
+<div class="login_signup">
+Already have an account? <a href="#" id="login">Login</a>
+</div>
+  </form>
+</div>
+
+   </div>
+
+<section id="contact-details">
+    <div class="con-details">
+        <span>GET IN TOUCH</span>
+        <h2>Visit one of our agency locations or contact us today</h2>
+        <h3>Shop Office</h3>
+        <div>
+        <li>
+        <i class="uil uil-map"></i>
+        <p>Concepcion Palasan Street Sariaya Quezon</p>
+        </li>
+        <li>
+        <i class="uil uil-envelope"></i>
+        <p>Email Us @Bloomz.com</p>
+        </li>
+        <li>
+        <i class="uil uil-phone"></i>
+        <p>Contact @Bloomz.com</p>
+        </li>
+        <li>
+        <i class="uil uil-clock"></i>
+        <p>Monday to Friday: 7:00am to 5:00pm</p>
+        </li>
+        </div>
+    </div>
+    <div class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30982.06370011156!2d121.44659276167911!3d13.913410342561589!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33bd486795b112c1%3A0x3f9ef21b9d7fc392!2sConcepcion%20Palasan%2C%20Quezon!5e0!3m2!1sen!2sph!4v1699955646889!5m2!1sen!2sph" width="600" height="450" style="border:0;" 
+        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+</section>
+
+<section id="form-details">
+    <form action="">
+        <span>LEAVE A MESSAGE</span>
+        <h2>We love to hear from you</h2>
+        <input type="text" placeholder="Your Name">
+        <input type="text" placeholder="E-mail">
+        <input type="text" placeholder="Subject">
+        <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+        <button >Submit</button>
+    </form>
+    <div class="people">
+        <div>
+        <img src="jasper-contact.jpeg">
+        <p><span>Jay Jasper Quitain</span>
+             Manager Bloomz shop <br> Phone: 09813018748 <br>Email: jjasperquitain@gmail.com</p>
+    </div>
+    <div>
+        <img src="carlo-contact.jpg">
+        <p><span>John Carlo Villanueva</span>
+            Assistant Manager <br> Phone: 09567603104 <br>Email: johncarlovillanueva@gmail.com</p>
+    </div>
+    <div>
+        <img src="jerelyn-contact.jpeg">
+        <p><span>Jerelyn Quitain</span>
+             Flower Designer <br> Phone: 09514229962 <br>Email: jerelynquitain@gmail.com</p>
+    </div>
+    </div>
+</section>
+
+
+ <!--contact section-->
+<section class="contact">
+  <div class="contact-box">
+    <h4>MY ACCOUNT</h4>
+    <li><a href="#">My account</a></li>
+    <li><a href="#">Checkout</a></li>
+    <li><a href="#">Contact Us</a></li>
+    <li><a href="#">Shopping Cart</a></li>
+    <li><a href="#">Whishlist</a></li>
+  </div>
+
+  <div class="contact-box">
+    <h4>QUICK LINKS</h4>
+    <li><a href="#">Store Location</a></li>
+    <li><a href="#">Orders Tracking</a></li>
+    <li><a href="#">Size Guide</a></li>
+    <li><a href="#">My account</a></li>
+    <li><a href="#">FAQs</a></li>
+  </div>
+
+  <div class="contact-box">
+    <h4>INFORMATION</h4>
+    <li><a href="#">Privacy Page</a></li>
+    <li><a href="#">About Us</a></li>
+    <li><a href="#">Careers</a></li>
+    <li><a href="#">Delivery Information</a></li>
+    <li><a href="#">Terms & Conditions</a></li>
+  </div>
+
+  <div class="contact-box">
+    <h4>CUSTOMER SERVICE</h4>
+    <li><a href="#">Shopping Policy</a></li>
+    <li><a href="#">Help & Conact Us</a></li>
+    <li><a href="#">Returns & Refunds</a></li>
+    <li><a href="#">Online Stores</a></li>
+    <li><a href="#">Terms and Conditions</a></li>
+  </div>
+
+  <div class="contact-box">
+    <h4>Bloomz</h4>
+    <h5>Connect with us</h5>
+    <div class="social">
+      <a href="#"><i class='bx bxl-facebook'></i></a>
+      <a href="#"><i class='bx bxl-instagram'></i></a>
+      <a href="#"><i class='bx bxl-twitter' ></i></a>
+    </div>
+  </div>
+</section>
+
+<!--scroll-->
+<a href="#" class="scroll-top"><i class='bx bxs-chevrons-up'></i></a>
+
+<div class="end-text">
+  <p>@jasper quitain, @jerelyn quitain, @john carlo villanueva</p>
+</div>
+<script src="index.js"></script>
+<script src="cart.js"></script>
+
+  </body>
+</html>

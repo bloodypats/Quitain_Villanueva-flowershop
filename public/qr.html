@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name = "viewport" content="width=device-width, initial-scale=1"/>
+    <title>Online Flowers Shop</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Jomolhari&family=Leckerli+One&family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo+Black&family=Jomolhari&family=Leckerli+One&family=Montserrat:wght@300;400;500;600;700;800;900&family=Rowdies:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+  </head>
+  <body class="qr-body">
+    <div class="container">
+        <h5>Write a message/picture or video link</h5>
+        <input type="text" placeholder="Paste here" id="qrtext">
+
+        <div id="imgqr">
+            <img src="" id="qrimage">
+
+        </div>
+
+        <button onclick="generateqr()">Generate QR code</button>
+
+
+
+    </div>
+
+ 
+
+<script>
+let imgqr = document.getElementById("imgqr");
+let qrimage = document.getElementById("qrimage");
+let qrtext = document.getElementById("qrtext");
+
+
+function generateqr(){
+    if (qrtext.value.length > 0){
+        qrimage.src =  "https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=" + qrtext.value;
+        imgqr.classList.add("show-img");
+        }else{
+            qrtext.classList.add('error');
+            setTimeout(()=>{
+                qrtext.classList.remove('error');  
+            }, 1000);
+        }
+    }
+
+</script>
+
+  </body>
+</html>

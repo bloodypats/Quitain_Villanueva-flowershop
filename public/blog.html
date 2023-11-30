@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name = "viewport" content="width=device-width, initial-scale=1"/>
+    <title>Online Flowers Shop</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Jomolhari&family=Leckerli+One&family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo+Black&family=Jomolhari&family=Leckerli+One&family=Montserrat:wght@300;400;500;600;700;800;900&family=Rowdies:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+  </head>
+  <body>
+
+  <header>
+    <a href="#"class="logo">
+      <h2>Bloomz</h2>
+    </a>
+
+    <ul class="navbar">
+      <li><a href="index.html">Home</a></li>
+      <li><a class="active" href="blog.html">Blog</a></li>
+      <li><a href="shop.html">Shop</a></li>
+      <li><a href="review.html">Reviews</a></li>
+    </ul>
+
+    <div class="h-icons">
+      <a href="#"><i class='bx bx-shopping-bag' id="cart-icon"></i></a>
+      <span id="cart-count">0</span>
+      <!--cart-->
+      <div class="cart">
+        <h2 class="cart-title">Your Cart</h2>
+        <div class="cart-content">
+      
+        </div>
+        <!--total-->
+        <div class="total">
+          <div class="total-title">Total</div>
+          <div class="total-price">₱0</div>
+        </div>
+        <!--buy-button-->
+        <button type="button" class="btn-buy">Buy Now</button>
+        <!--cart-close-->
+        <i class='bx bx-x' id="close-cart"></i>
+      </div>
+      <a href="contact.html"><i class='bx bx-phone'></i></a>
+      <a href="#"><i class='bx bx-user' onclick="menuToggle();"></i></a>
+      <div class="user-name">
+        <h3>User Name <br><span>user@gmail.com</span></h3>
+        <i class='bx bx-x' id="close-user" onclick="closeMenu();"></i>
+        <ul>
+          <li><img src="user-a.png"><strong>My Profile</strong></li>
+          <li><img src="edit-user.png"><strong>Edit Profile</strong></li>
+          <li><img src="settings.png"><strong>Settings & Privacy</strong></li>
+          <li><img src="help.png"><strong>Help & Support</strong></li>
+          <li><br><img src="log.png"><strong>Logout </strong></li>
+        </ul>
+
+      </div>
+
+
+
+
+      <div class="bx bx-menu" id = "menu-icon"></div>
+      </div>
+
+<button class="button" id="form-open">Login</button>
+  </header>
+
+<section class="pages-header">
+  <div class="home-text">
+    <br>
+    <br>
+    <h1>Bloosom Clips<br>#readmore</h1>
+  </div>
+</section>
+
+<section id="pages">
+<div class="pages-box">
+<div class="pages-img"> 
+    <video src="vid.tmp" loop autoplay muted></video>
+    <h3>Happy Mother's Day</h3>
+</div>
+<div class="pages-details">
+    <h4>Floral Trends for Mother's Day 2023: Celebrating the Women We Love</h4><br>
+    <p>Moms deserve to be celebrated daily, but especially on Mother's Day! 
+    With less than a month to go, it is time to start thinking about <br>
+   how to show the special women in our lives how much we appreciate them.</p>
+   <br>
+   <a href="#"> CONTINUE READING</a>
+</div>
+<h1>13/01</h1>
+</div>
+<div class="pages-box">
+  <div class="pages-img"> 
+      <img src="pages2.png" alt="flower">
+  </div>
+  <div class="pages-details">
+      <h4>Floret Flowers Blog: Lovely Community</h4><br>
+      <p>The Floret Flower Farm has been heralded as one of the nation's top “farmer florists,” 
+        and their story is as romantic as their arrangements.<br>
+        Flowers have inspired painters, scientists, and countless others for centuries.</p>
+     <br>
+     <a href="#"> CONTINUE READING</a>
+  </div>
+  <h1>13/04</h1>
+  </div>
+  <div class="pages-box">
+    <div class="pages-img"> 
+      <video src="tulipina.mp4" loop autoplay muted></video>
+      <h3>Tulipina Floral Blogs</h3>
+    </div>
+    <div class="pages-details">
+        <h4>Tulipina: The Most Unique of Floral Blogs</h4><br>
+        <p>Tulipina is a boutique floral design studio near San Francisco, owned and operated by Kiana Underwood.
+           Underwood adds beauty <br>
+           primarily to “eclectic events” and weddings, and her work has been 
+           featured in a host of magazines and websites.</p>
+       <br>
+       <a href="#"> CONTINUE READING</a>
+    </div>
+    <h1>13/05</h1>
+    </div>
+    <div class="pages-box">
+      <div class="pages-img"> 
+          <img src="pages4.jpg" alt="flower">
+      </div>
+      <div class="pages-details">
+          <h4>Florist Memes - Because We All Need A Laugh On Valentine's Day!</h4><br>
+          <p>Valentine's Day is right around the corner and it can be a fun and exciting occasion to
+             celebrate with our loved ones.  <br>
+             We hope this collection of Valentine's Florist Memes put a smile on your face! </p>
+         <br>
+         <a href="#"> CONTINUE READING</a>
+      </div>
+      <h1>13/06</h1>
+      </div>
+      <div class="pages-box">
+        <div class="pages-img"> 
+          <video src="twin.mp4" loop autoplay muted></video>
+      <h3>Floral Design Offers</h3>
+        </div>
+        <div class="pages-details">
+            <h4>Twinbrook Floral Design offers a wide variety of fresh flowers</h4><br>
+            <p>The Floral Design team at Twinbrook Floral Design is one of the best you will find.<br>
+              The basic job description for these folks, and others in the industry, would require that
+               the Floral Designer possess:</p>
+           <br>
+           <a href="#"> CONTINUE READING</a>
+        </div>
+        <h1>13/07</h1>
+        </div>
+  </section>
+
+   <!--log in-->
+   <div class="form_container">
+     <i class='bx bx-x form_close'></i>
+
+     <!--log in form-->
+
+     <div class="form login_form">
+       <form action="#">
+         <h2>Login</h2>
+
+         <div class="input_box">
+          <input type="email"placeholder="Enter your email" required/>
+          <i class="uil uil-envelope email"></i>
+         </div>
+
+         <div class="input_box">
+          <input type="password"placeholder="Enter your password" required/>
+          <i class='bx bx-lock-alt password' ></i>
+          <i class="uil uil-eye-slash pw_hide"></i>
+         </div>
+
+  <div class="option_field">
+  <span class="checkbox">
+  <input type="checkbox" id="check">
+  <label for="check">Remember me</label>
+  </span>
+  <a href="#" class"forgot_pw">Forgot password?</a>
+  </div>
+
+<button class="button">Login Now</button>
+
+<div class="login_signup">
+  Don't have an account? <a href="#" id="signup">Signup</a>
+</div>
+       </form>
+     </div>
+
+<!--Sign Up form-->
+
+<div class="form signup_form">
+  <form action="#">
+    <h2>Signup</h2>
+
+    <div class="input_box">
+     <input type="email"placeholder="Enter your email" required/>
+     <i class="uil uil-envelope email"></i>
+    </div>
+
+    <div class="input_box">
+     <input type="password"placeholder="Create password" required/>
+     <i class="uil uil-lock password"></i>
+        <i class="uil uil-eye-slash pw_hide"></i>
+    </div>
+
+    <div class="input_box">
+     <input type="password"placeholder="Confirm password" required/>
+      <i class="uil uil-lock password"></i>
+    <i class="uil uil-eye-slash pw_hide"></i>
+    </div>
+
+<button class="button">Signup Now</button>
+
+<div class="login_signup">
+Already have an account? <a href="#" id="login">Login</a>
+</div>
+  </form>
+</div>
+
+   </div>
+
+
+
+<!--pagination section-->
+<section id="pagination" class="new product">
+  <a href="#">1</a>
+  <a href="#">2</a>
+  <a href="#"><i class='bx bx-right-arrow-alt'></i></a>
+</section>
+
+ <!--contact section-->
+
+<section class="contact">
+  <div class="contact-box">
+    <h4>MY ACCOUNT</h4>
+    <li><a href="#">My account</a></li>
+    <li><a href="#">Checkout</a></li>
+    <li><a href="#">Contact Us</a></li>
+    <li><a href="#">Shopping Cart</a></li>
+    <li><a href="#">Whishlist</a></li>
+  </div>
+
+  <div class="contact-box">
+    <h4>QUICK LINKS</h4>
+    <li><a href="#">Store Location</a></li>
+    <li><a href="#">Orders Tracking</a></li>
+    <li><a href="#">Size Guide</a></li>
+    <li><a href="#">My account</a></li>
+    <li><a href="#">FAQs</a></li>
+  </div>
+
+  <div class="contact-box">
+    <h4>INFORMATION</h4>
+    <li><a href="#">Privacy Page</a></li>
+    <li><a href="#">About Us</a></li>
+    <li><a href="#">Careers</a></li>
+    <li><a href="#">Delivery Information</a></li>
+    <li><a href="#">Terms & Conditions</a></li>
+  </div>
+
+  <div class="contact-box">
+    <h4>CUSTOMER SERVICE</h4>
+    <li><a href="#">Shopping Policy</a></li>
+    <li><a href="#">Help & Conact Us</a></li>
+    <li><a href="#">Returns & Refunds</a></li>
+    <li><a href="#">Online Stores</a></li>
+    <li><a href="#">Terms and Conditions</a></li>
+  </div>
+
+  <div class="contact-box">
+    <h4>Bloomz</h4>
+    <h5>Connect with us</h5>
+    <div class="social">
+      <a href="#"><i class='bx bxl-facebook'></i></a>
+      <a href="#"><i class='bx bxl-instagram'></i></a>
+      <a href="#"><i class='bx bxl-twitter' ></i></a>
+    </div>
+  </div>
+</section>
+
+<!--scroll-->
+<a href="#" class="scroll-top"><i class='bx bxs-chevrons-up'></i></a>
+
+<div class="end-text">
+  <p>@jasper quitain, @jerelyn quitain, @john carlo villanueva</p>
+</div>
+<script src="index.js"></script>
+<script src="cart.js"></script>
+
+  </body>
+</html>
